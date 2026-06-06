@@ -207,5 +207,16 @@ Foi possível validar:
 ---
 
 # Conclusão
- Os teses foram realizados com sucesso no final dos testes, a principal dificuldade que encontrei ao realizar eles foi entender como utilizar o SUPABASE pois foi a minha primeiravez utilizado, porem achei uma boa plataforma.
- Quanto aplicação de caixa cinza, graças ao testes compreendi melhor como aplicar o conceito e quando aplicar.
+ Os testes foram realizados de forma correta, fizemos a autenticação com sucesso no final dos testes.
+ A prinipio tive dificuldades em fazer a parte do postman conseguir conectar com o supabase, porem após um tempo batendo cabeça e com auxilio da propria ferramenta do postman, onde sinalza oque pode ser erro
+ entendi que o problema eram 2.
+  1 - Na parte do headers eu estava colocando bearer{{api_key}} Porem o correto seria Bearer {{api_key}} (com espaço e letra maiuscula)
+  2 - A senha que eu estava informando do usuario estava errada, no começo dos testes estava utilizando o usuario: muzbz09@gmail.com com a senha 142536, porem estava digitando errado no postman
+  Cheguei nessa conclusão, pois criei um segundo usuario aluno@teste.com senha 123456 ai deu certo.
+  print novo usuario> 
+  <img width="1429" height="304" alt="image" src="https://github.com/user-attachments/assets/97d6989d-3efc-4f3d-9012-eaaa208586c1" />
+
+
+  Uma possivel melhoria que eu posso ficar atento para proximos teste seria, colocar um usuario e senha padrão e deixar separadao em um documento de texto as senhas da API/LINK, para facilitar na hora de testar.
+  A importancia do teste de caixa cinza em API é que nos permite validar o comportamneto da API usando um conhecimento parcial da estrutura interna (sem ter acesso ao código fonte) auxiliando na identificação de falahas de autenticação e vunerabildiades.
+  
